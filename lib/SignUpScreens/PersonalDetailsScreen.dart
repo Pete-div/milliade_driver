@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:milliadedriver/Screens/DetailsScreen2.dart';
+import 'package:milliadedriver/SignUpScreens/DetailsScreen2.dart';
 
 class PersonalDetailsScreen extends StatefulWidget {
   @override
@@ -26,7 +26,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
       },
       textInputAction: TextInputAction.next,
       decoration: InputDecoration(
-        fillColor: Colors.grey,filled: true,
+        fillColor: Colors.grey.shade200,filled: true,
 
         contentPadding: EdgeInsets.fromLTRB(20, 10, 30, 10),
         hintText: 'Enter phone Number',
@@ -57,7 +57,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
       textInputAction: TextInputAction.next,
       decoration: InputDecoration(
 
-          fillColor: Colors.grey,filled: true,
+          fillColor: Colors.grey.shade200,filled: true,
           contentPadding: EdgeInsets.fromLTRB(20, 10, 30, 10),
           hintText: 'Enter first name',
           border: OutlineInputBorder(
@@ -85,7 +85,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
       onSaved:( value){lastNameController.text=value!;},
       textInputAction: TextInputAction.next,
       decoration: InputDecoration(
-          fillColor: Colors.grey,filled: true,
+          fillColor: Colors.grey.shade200,filled: true,
           contentPadding: EdgeInsets.fromLTRB(20, 10, 30, 10),
           hintText: 'Enter last name',
           border: OutlineInputBorder(
@@ -111,7 +111,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
       onSaved:( value){emailController.text=value!;},
       textInputAction: TextInputAction.next,
       decoration: InputDecoration(
-        fillColor: Colors.grey,filled: true,
+        fillColor: Colors.grey.shade200,filled: true,
           contentPadding: EdgeInsets.fromLTRB(20, 10, 30, 10),
           hintText: 'Enter valid Email ',
           border: OutlineInputBorder(
@@ -121,13 +121,13 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
       ),
     );
     final signUpButton = Material(
-      elevation: 5,
+      elevation: 2,
       borderRadius: BorderRadius.circular(23),
       color: Colors.black,
       child: MaterialButton(
 
         minWidth: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+        padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
         onPressed: (){
           Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailsScreen2()));
         },
@@ -411,7 +411,7 @@ class _PersonalDetailsScreenState extends State<PersonalDetailsScreen> {
                                       ],
                                     ),
                                     Padding(
-                                      padding: const EdgeInsets.only(left: 30.0,right: 30,top: 80),
+                                      padding: const EdgeInsets.only(left: 30.0,right: 30,top: 80,bottom: 80),
                                       child: signUpButton,
                                     )
                                   ],

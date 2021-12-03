@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:milliadedriver/Screens/Registration2.dart';
+import 'package:milliadedriver/SignUpScreens/Registration2.dart';
 
 class Registration1 extends StatefulWidget {
   @override
@@ -24,7 +24,7 @@ class _Registration1State extends State<Registration1> {
         contentPadding: EdgeInsets.fromLTRB(10, 20, 0, 10),
         suffixIcon: Icon(Icons.cancel_outlined),
         hintText: '8134654678',
-        hintStyle: TextStyle(fontSize: 16),
+        hintStyle: TextStyle(fontSize: 18),
       ),
     );
 

@@ -1,6 +1,6 @@
 import'package:flutter/material.dart';
 import 'package:dotted_border/dotted_border.dart';
-import 'package:milliadedriver/Screens/DetailsScreen3.dart';
+import 'package:milliadedriver/SignUpScreens/DetailsScreen3.dart';
 
 
     class DetailsScreen2 extends StatefulWidget {
@@ -146,13 +146,13 @@ import 'package:milliadedriver/Screens/DetailsScreen3.dart';
           ),
         );
         final signUpButton = Material(
-          elevation: 5,
+          elevation: 2,
           borderRadius: BorderRadius.circular(23),
           color: Colors.black,
           child: MaterialButton(
 
             minWidth: MediaQuery.of(context).size.width,
-            padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+            padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
             onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailsScreen3()));
             },

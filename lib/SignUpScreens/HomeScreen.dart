@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:milliadedriver/Screens/RegistrationScreen1.dart';
+import 'package:milliadedriver/SignUpScreens/RegistrationScreen1.dart';
 
 class HomeScreen extends StatefulWidget {
   @override

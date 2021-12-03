@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:milliadedriver/SignInScreen/HomeScreen.dart';
 
 class SubmitScreen extends StatefulWidget {
   @override
@@ -16,7 +17,7 @@ class _SubmitScreenState extends State<SubmitScreen> {
 
         minWidth: MediaQuery.of(context).size.width,
         padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
-        onPressed: (){
+        onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (contect)=>HomeScreen()));
 
         },
         child: Text('Close',

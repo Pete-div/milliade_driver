@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:milliadedriver/Screens/PersonalDetailsScreen.dart';
+import 'package:milliadedriver/SignUpScreens/PersonalDetailsScreen.dart';
 
 class Registration2 extends StatefulWidget {
   @override

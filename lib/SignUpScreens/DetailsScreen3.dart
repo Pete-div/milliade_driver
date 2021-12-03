@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:dotted_border/dotted_border.dart';
-import 'package:milliadedriver/Screens/SubmitScreen.dart';
+import 'package:milliadedriver/SignUpScreens/SubmitScreen.dart';
 
 class DetailsScreen3 extends StatefulWidget {
   @override
@@ -126,7 +126,7 @@ class _DetailsScreen3State extends State<DetailsScreen3> {
       child: MaterialButton(
 
         minWidth: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+        padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
         onPressed: (){
           Navigator.push(context, MaterialPageRoute(builder: (context)=>SubmitScreen()));
         },
@@ -257,7 +257,7 @@ class _DetailsScreen3State extends State<DetailsScreen3> {
                                       ],
                                     ),
                                     Padding(
-                                      padding: const EdgeInsets.only(left: 20.0,right: 20,top: 180),
+                                      padding: const EdgeInsets.only(left: 20.0,right: 20,top: 200),
                                       child: signUpButton,
                                     )
                                   ],
